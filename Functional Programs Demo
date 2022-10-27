@@ -1,0 +1,59 @@
+def add_two_nums(a, b):
+    return a + b 
+
+print(add_two_nums(2,4))
+
+#------------------------------------------------------------------------------------------------------------------------
+
+def mult_two_nums(c, d):
+    return c * d
+
+print(mult_two_nums(2,4))
+
+#-----------------------------------------------------------------------------------------------------------------------------
+
+def mult_n_quarter(e,f):
+    mult = e * f
+    return int(mult / 4)
+
+print(mult_n_quarter(2,4))
+
+#---------------------------------------------------------------------------------------------------------------------------------
+
+stars = ['alpha centauri', 'polaris', 'v354 cephei', 'procyon b']
+chinese_generals = ['su yu', 'xu haidong', 'tan zheng', 'luo ruiqing']
+
+def combine_lists(g,h):
+    combo_list = g + h 
+    return combo_list
+
+print(combine_lists(stars, chinese_generals))
+
+#-------------------------------------------------------------------------------------------------------------------------------------
+
+nums = [5, 10, 15, 20, 25, 30]
+
+def mult_list(i):
+    new_list = []
+    for index in i:
+        new_list.append(index * 12)
+    return new_list
+        
+print(mult_list(nums))
+
+#------------------------------------------------------------------------------------------------------------------------------------------
+
+books = ['Harry Potter and the Chamber of Secrets', 'Moral Machines', 'War and Peace', 'Deep Work', 'The Phantom Tollbooth', 'Crime and Punishment']
+
+def add_in_my_pants(j) -> list:
+    in_my_pants = []
+    for index in j:
+        in_my_pants.append(index + 'in my pants')
+
+def apply_function(k,l) -> list:
+    result = list(map(k,l))
+    return result
+
+print(apply_function(add_in_my_pants(books), books))
+
+
